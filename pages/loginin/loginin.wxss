@@ -1,0 +1,46 @@
+/**loginin.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 228rpx;
+  height: 228rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 220px;
+}
+
+.loginin {
+  margin-top: 100px;
+  width: 60%;
+  height: 50px;
+  background-color: #00a0e9;
+  line-height: 50px;
+  color: #fff;
+  transition: all 358ms;
+  font-family: "Microsoft Yahei";
+}
+.loginin:hover {
+  background-color: #0091d3;
+}
+.logintext {
+  color: #000;
+  width: 100%;
+  font-family: "Microsoft Yahei";
+  text-align: center; 
+}
+.loginvison {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}

@@ -1,0 +1,260 @@
+/**practice.wxss**/
+
+page {
+  background-color: #eee;
+}
+
+.exam_text_box {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+
+.exam_text {
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.exam_text_num {
+  width: auto;
+  height: 20px;
+  background-color: #00a1e9;
+  text-align: center;
+  line-height: 20px;
+  float: left;
+  color: #fff;
+  font-family: "Microsoft Yahei";
+  font-size: 14px;
+}
+
+.exam_text_contect {
+  width: auto;
+  height: auto;
+  color: #000;
+  font-family: "Microsoft Yahei";
+  font-size: 14px;
+}
+
+.exam_change_box {
+  width: 90%;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-top: 1px;
+  color: #000;
+  font-family: "Microsoft Yahei";
+  font-size: 20px;
+}
+
+/*
+    选项对的样式
+    background-color:#3bdb33;
+    color:#fff;
+
+    选项错的样式
+    background-color:#eb3b3b;
+    color:#fff;
+*/
+
+.exam_change_lia {
+  width: 33%;
+  height: 50px;
+  float: left;
+  text-align: center;
+  transition: all 358ms;
+}
+
+/*.exam_change_lia:hover {
+    background-color: #00a1e9;
+    color: #fff;
+}*/
+
+.exam_change_li {
+  width: 33%;
+  height: 50px;
+  float: left;
+  text-align: center;
+  transition: all 358ms;
+  border-left: 1px solid #eee;
+}
+
+/*.exam_change_li:hover {
+    background-color: #00a1e9;
+    color: #fff;
+}*/
+
+.exam_btn_box {
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+.exam_btn_turn {
+  width: 25%;
+  height: 50px;
+  float: left;
+  border-right: 1px solid #eee;
+}
+
+.exam_btn_li {
+  width: 25%;
+  height: 50px;
+  float: right;
+  border-left: 1px solid #eee;
+}
+
+.exam_btn_li:active {
+  background-color: #eee;
+}
+
+.exam_btn_turn:active {
+  background-color: #eee;
+}
+
+.exam_btn_li_img {
+  width: 100%;
+  height: 50px;
+}
+
+.exam_menu_box {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0px;
+}
+
+.exam_menu_left {
+  width: 30%;
+  height: 50px;
+  float: left;
+  border-right: 1px solid #eee;
+  text-align: center;
+  line-height: 50px;
+  color: #000;
+  font-family: "Microsoft Yahei";
+  font-size: 16px;
+  transition: all 258ms;
+}
+
+.exam_menu_left:active {
+  background-color: #00a1e9;
+  color: #fff;
+}
+
+.exam_menu_right:active {
+  background-color: #00a1e9;
+  color: #fff;
+}
+
+.exam_menu_right {
+  width: 30%;
+  height: 50px;
+  float: right;
+  border-left: 1px solid #eee;
+  text-align: center;
+  line-height: 50px;
+  color: #000;
+  font-family: "Microsoft Yahei";
+  font-size: 16px;
+  transition: all 258ms;
+}
+
+.exam_menu_mid {
+  width: 38%;
+  height: 50px;
+  float: left;
+}
+
+.exam_menu_mid_name {
+  width: 100%;
+  height: 25px;
+  line-height: 30px;
+  color: #000;
+  font-family: "Microsoft Yahei";
+  font-size: 14px;
+  text-align: center;
+}
+
+.exam_menu_mid_num {
+  width: 100%;
+  height: 25px;
+  line-height: 20px;
+  color: #00a1e9;
+  font-family: "Microsoft Yahei";
+  font-size: 12px;
+  text-align: center;
+}
+
+.title_jump {
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  bottom: 50px;
+  background-color: #ec6100;
+  line-height: 30px;
+  z-index: 999;
+}
+
+.t_jump_l {
+  width: 95%;
+  height: 30px;
+  float: left;
+  text-align: center;
+  color: #fff;
+  font-family: "Microsoft Yahei";
+  font-size: 14px;
+}
+
+.t_jump_closs {
+  width: 5%;
+  height: 30px;
+  float: right;
+  text-align: left;
+  color: #fff;
+  font-family: "Microsoft Yahei";
+  font-size: 14px;
+}
+
+/*答案解析*/
+
+.keySolve {
+  font-family: "Microsoft Yahei";
+  color: #00a1e9;
+  bottom: 200px;
+  width: 90%;
+  height: 300px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.keysolve_box {
+  width: 95%;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin: 0 auto;
+}
+
+.keySolve_li {
+  color: #3f3f3f;
+}
+
+.proTurn {
+  font-family: "Microsoft Yahei";
+  text-align: center;
+
+}
+
+.buttonConstStyle {
+  width: 350px;
+}

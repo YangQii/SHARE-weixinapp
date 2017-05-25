@@ -1,0 +1,17 @@
+<!--loginin.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+</view>
+<view class="loginvison">
+  <text class="logintext">
+    赛尔无人机驾考宝典小程序
+  </text>
+</view>
+<view>
+  <button class="loginin" bindtap="shareLogin">
+      {{butText}}
+  </button>
+</view>

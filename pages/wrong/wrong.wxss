@@ -1,0 +1,114 @@
+/* pages/favorites/favorites.wxss */
+page {
+    background-color:#eee;
+}
+.favor_top_box {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    line-height: 40px;
+}
+.favor_top {
+    width: 90%;
+    height: 40px;
+    color: #000;
+    font-family: "Microsoft Yahei";
+    font-size: 16px;
+    margin: 0 auto;
+}
+.favor_body_box {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.favor_body {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+.favor_li {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    display: block;
+}
+.favor_li_left {
+    width: 74%;
+    height: 60px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.favor_li_num {
+    width: auto;
+    height: 20px;
+    line-height: 20px;
+    background-color: #00a1e9;
+    font-family: "Microsoft Yahei";
+    font-size: 12px; 
+    float: left;
+    color: #fff; 
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.favor_li_text {
+    width:auto;
+    height: 80px;
+    float: left;
+    color: #000;
+    font-family: "Microsoft Yahei";
+    font-size: 14px; 
+}
+.favor_li_opera {
+    width: 20%;
+    height: 80px;
+    float: right;
+    background-color: #ccc;
+    text-align: center;
+}
+.favor_li_opera_del {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    /*height: 40px;
+    line-height: 40px;*/
+    color: #fff;
+    font-family: "Microsoft Yahei";
+    font-size: 14px; 
+}
+.favor_li_opera_select {
+    width: 100%;
+    height: 80px;
+    /*height: 40px;
+    line-height: 20px;*/
+    text-align: center;
+}
+.favor_menu_box {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    color: #000;
+    font-family: "Microsoft Yahei";
+    font-size: 14px; 
+    position: fixed;
+    bottom: 0px;
+}
+.favor_menu_total {
+    width: 30%;
+    height: 50px;
+    float: left;
+    border-right:1px solid #eee;
+    text-align: center; 
+}
+.favor_menu_delall {
+    width: 30%;
+    height: 50px;
+    float: right;
+    border-left:1px solid #eee;
+    text-align: center; 
+}

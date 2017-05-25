@@ -1,0 +1,49 @@
+/* pages/examprocess/examprocess.wxss */
+
+page {
+  background-color: #eee;
+}
+.about_img {
+    width: 100%;
+    height: 100%;
+}
+.about_box {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.about_logo {
+  width: 50%;
+  height: 140px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.examprocessindex {
+  margin: 20px;
+  font-family: 'Microsoft YaHei UI';
+  line-height: 25px;
+}
+
+view {
+  margin: 8px;
+}
+
+text {
+  margin: 5px;
+}
+
+.index_h1 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.index_h3 {
+  text-align: center;
+  font-size: 17px;
+}
+
+.index_h4 {
+  font-size: 15px;
+}

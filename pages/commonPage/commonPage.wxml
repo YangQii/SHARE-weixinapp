@@ -1,0 +1,78 @@
+
+<!--顺序练习页面practice.wxml-->
+<view class="exam_text_box">
+  <view class="exam_text">
+    <button class="exam_text_num">
+      {{proId}}
+    </button>
+    <text id="proText" class="exam_text_contect">
+      {{proText}}
+    </text>
+  </view>
+</view>
+<view class="exam_change_box" bindtap="examChangeBox">
+
+  <!--对错样式在practice.wxss里有注释-->
+  <view class="exam_change_lia" style="background-color:{{butColorA}}" bindtap="onA">
+    A
+  </view>
+  <view class="exam_change_li" style="background-color:{{butColorB}}" bindtap="onB">
+    B
+  </view>
+  <view class="exam_change_li" style="background-color:{{butColorC}}" bindtap="onC">
+    C
+  </view>
+</view>
+<view class="exam_btn_box">
+
+  <!--题目跳转-->
+
+  <!--<view class="exam_btn_turn" bindtap="PracticeTurnShow">
+
+   
+  <image src="{{favoIcon}}" class="exam_btn_li_img"></image>
+</view>-->
+<view class="exam_btn_li" bindtap="onFavo">
+  <image src="{{favoIcon}}" class="exam_btn_li_img"></image>
+</view>
+</view>
+
+<!--题目跳转picker-view组件-->
+
+<!--<view class="proTurn" wx:if="{{onPracticeTurnShow}}">
+  <view class="proConst">跳转到第{{year}} {{month}} {{day}}道题</view>
+  <picker-view indicator-style="height: 40px;" style="width: 100%; height: 150px;" value="{{value}}" bindchange="onTurnBindChange">
+    <picker-view-column>
+      <view wx:for="{{years}}" style="line-height: 50px">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{months}}" style="line-height: 50px">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{days}}" style="line-height: 50px">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+  <button type="primary" class="buttonConstStyle" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="peoPrimary"> 确认 </button>
+</view>-->
+
+<!--答案解析-->
+<view class="keySolve" wx:if="{{show_answer_text}}">
+  <view class="keysolve_box">
+    答案解析：
+    <view class="keySolve_li">{{keySolve}}</view>
+  </view>
+</view>
+<view class="title_jump" wx:if="{{showGoto}}">
+  <view class="t_jump_l" bindtap="GotoPro">
+    记忆您上次做到{{lastProId}}题 点击跳转
+  </view>
+  <view class="t_jump_closs" bindtap="closeTab">X</view>
+</view>
+<view class="exam_menu_box">
+  <view class="exam_menu_left" bindtap="onLast">上一题</view>
+  <view class="exam_menu_mid">
+    <view class="exam_menu_mid_name">{{chooseText}}</view>
+    <view class="exam_menu_mid_num">{{proId}} / {{proSum}}</view>
+  </view>
+  <view class="exam_menu_right" bindtap="onNext">下一题</view>
+</view>

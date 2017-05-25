@@ -1,0 +1,32 @@
+
+<!--收藏夹pages/favorites/favorites.wxml-->
+<view class="favor_top_box">
+  <view class="favor_top">
+    错题集
+  </view>
+</view>
+<scroll-view scroll-y="true">
+  <view class="favor_body_box">
+    <checkbox-group bindchange="checkboxChange">
+      <block class="favor_body" wx:for="{{pros}}" wx:key="key">
+        <view class="favor_li" style="display:block;" id="favor_li_1">
+          <view class="favor_li_left">
+            <view class="favor_li_num">{{item.id}}</view>
+            <view class="favor_li_text" data-proid="{{index}}" bindtap="showPro">
+              {{item.text}}
+            </view>
+          </view>
+          <view class="favor_li_opera">
+            <view class="favor_li_opera_del" bindtap="delPro" data-proid="{{item.id}}">
+              移除
+            </view>
+          </view>
+        </view>
+      </block>
+    </checkbox-group>
+  </view>
+</scroll-view>
+<!--<view class="favor_menu_box">
+  <view class="favor_menu_total"></view>
+  <view class="favor_menu_delall"></view>
+</view>-->

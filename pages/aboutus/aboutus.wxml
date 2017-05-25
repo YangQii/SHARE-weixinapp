@@ -1,0 +1,29 @@
+<!--关于我们pages/aboutus/aboutus.wxml-->
+<view class="about_box">
+  <view class="about_logo">
+    <image src="http://shareuav-xcx.oss-cn-qingdao.aliyuncs.com/icon/about_logo.jpg" class="about_img"></image>
+  </view>
+  <view class="about_li">
+    <view class="about_li_area">版本号：V1.1.9</view>
+  </view>
+  <view class="about_li">
+    <view class="about_li_area">联系邮箱：shareuav@shareuavtec.com</view>
+  </view>
+  <view class="about_li">
+    <view class="about_li_area" bindtap="openWeb">官方网站：http://www.shareuavtec.com</view>
+  </view>
+  <view class="about_li" bindtap="callPhone">
+    <view class="about_li_area">联系电话：0531-87214610
+    </view>
+  </view>
+</view>
+<view class="about_logo" style="margin: 0 auto;margin-top: 20px; height:160px">
+  <image class="about_img" src="/images/gzh.png" />
+</view>
+
+<!--
+<view class="about_link">
+    <view class="about_link_left">前往官网</view>
+    <view class="about_link_right">淘宝店铺</view>
+</view>
+-->

@@ -1,0 +1,97 @@
+<!--顺序练习-->
+<view class="index_menu_box" bindtap="onChooseTurnPractice">
+  <view class="index_menu_left">
+    <text>
+      顺序练习
+    </text>
+  </view>
+  <view class="index_menu_right">
+    <image class="index_menu_img" src="/images/practice_img.png">
+      <text class="index_menu_t">
+      </text>
+    </image>
+  </view>
+</view>
+
+<!--模拟考试-->
+<view class="index_menu_box" bindtap="onChooseExam">
+  <view class="index_menu_left">
+    <text>
+      模拟考试
+    </text>
+  </view>
+  <view class="index_menu_right">
+    <image class="index_menu_img" src="/images/exam_1.png">
+      <text class="index_menu_t">
+      </text>
+    </image>
+  </view>
+</view>
+
+<!--随机练习-->
+<view class="index_btn_box">
+  <view class="index_btn_li" bindtap="onChoose">
+    <view class="index_btn_li_top">随机练习</view>
+    <view class="index_btn_li_bottom">
+      <image src="/images/index_aa.png" class="index_btn_img"></image>
+    </view>
+  </view>
+
+  <!--错题集-->
+  <view class="index_btn_li" bindtap="onErr">
+    <view class="index_btn_li_top">错题集</view>
+    <view class="index_btn_li_bottom">
+      <image src="/images/index_bb.png" class="index_btn_img"></image>
+    </view>
+  </view>
+
+  <!--收藏夹-->
+  <view class="index_btn_li" bindtap="onFavo">
+    <view class="index_btn_li_top">收藏夹</view>
+    <view class="index_btn_li_bottom">
+      <image src="/images/index_cc.png" class="index_btn_img"></image>
+    </view>
+  </view>
+
+  <!--考试流程-->
+  <view class="index_btn_li" bindtap="onExamProcess">
+    <view class="index_btn_li_top">考试流程</view>
+    <view class="index_btn_li_bottom">
+      <image src="/images/index_dj.png" class="index_btn_img"></image>
+    </view>
+  </view>
+
+  <!--关于我们-->
+  <view class="index_btn_li" bindtap="onAboutUs">
+    <view class="index_btn_li_top">关于我们</view>
+    <view class="index_btn_li_bottom">
+      <image src="/images/index_dj.png" class="index_btn_img"></image>
+    </view>
+  </view>
+</view>
+
+<!--用picker组件-->
+<view class="on_choose" wx:if="{{on_choose_show}}">
+  <view class="pointStyle">请选择后进入答题：</view>
+  <view class="chooseSection">
+    <view class="section">
+      <view class="section__title">机型</view>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+          当前选择：{{array[index]}}
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <view class="section__title">技术类别</view>
+      <picker bindchange="bindPickerChangePeo" value="{{indexPeo}}" range="{{Peoarray}}">
+        <view class="picker">
+          当前选择：{{Peoarray[Peoindex]}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="btnStyle">
+    <button type="primary" style="background-color:#00a0e9" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="peoPrimary"> 确认 </button>
+  </view>
+</view>

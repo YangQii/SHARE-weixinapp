@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/examprocess/examprocess",
+    "pages/loginin/loginin",
+    "pages/examresults/examresults",
+    "pages/exam/exam",
+    "pages/commonPage/commonPage",
+    "pages/practice/practice",
+    "pages/favorites/favorites",
+    "pages/wrong/wrong",
+    "pages/aboutus/aboutus"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#eee",
+    "navigationBarTitleText": "驾考宝典",
+    "navigationBarTextStyle": "black"
+  }
+}

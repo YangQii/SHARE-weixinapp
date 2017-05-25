@@ -1,0 +1,24 @@
+
+<!--考试结果pages/examresults/examresults.wxml-->
+<view class="es_box">
+  <view class="es_area">
+    <view class="es_examname" style="font-size:25px;">模拟试卷</view>
+    <view class="es_examinfo">
+      考试时间 {{examtime}} 规定时间 60:00 分数:
+      <text class="es_font_a" style="font-size:25px;font-color:#00a0e9;">{{score}}</text>
+    </view>
+    <view class="es_examlist">
+      <block wx:for="{{pros}}">
+        <view class="es_el_libox">
+          <view class="es_el_li" style="background-color:{{item.color}};" data-proid="{{item.id}}" bindtap="toPro">{{item.id}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+<view class="es_menu_box">
+  <view class="es_menu_li" bindtap="rePro">再做一套</view>
+  <view class="es_menu_li" bindtap="allPro">回顾题目</view>
+  <view class="es_menu_li" bindtap="wrongPro">只看错题</view>
+  <view class="es_menu_li" bindtap="toHome">返回主页</view>
+</view>
